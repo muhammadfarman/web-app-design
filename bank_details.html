@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web App Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+  </head>
+  <body class="form_body">
+    <!-- ****************Dashbord Start******************** -->
+    <div class="container-scroller d-flex">
+      <!-- partial:./partials/_sidebar.html -->
+      
+      <div class="sidebar sidebar-offcanvas" id="sidebar" style="padding: 20px;">
+      <div class="site_brand sidebar_logo sidebar-category text-center ">
+        <img src="./img/logo.png">
+        <hr>
+      </div>
+      
+         <!-- Accordian Menu -->
+
+         <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header">      
+                <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne">
+                  <i class="menu_icon fa fas fa-columns"></i>
+                  <span>Dashboard</span>                 
+                </a>      
+            </div>
+          </div>
+
+           <div class="card">
+            <div class="card-header" id="headingTwo">      
+                <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <i class="menu_icon fa fas fa-columns"></i>
+                  <span class="menu_text">Settings</span>
+                  <span class="angle_accordian">
+                    <i class="dropdown_icon fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a>      
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul class="accordian__menu">
+                  <li><a href="#">Personal Data</a></li>
+                  <li><a href="#">Bank Details</a></li>
+                  <li><a href="#">Downline Info</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+           <div class="card">
+            <div class="card-header" id="headingThree">      
+                <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <i class="menu_icon fa fas fa-credit-card"></i>
+                  <span class="menu_text">Finances</span>
+                  <span class="angle_accordian">
+                    <i class="dropdown_icon fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a>      
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul class="accordian__menu">
+                  <li><a href="#">Personal Data</a></li>
+                  <li><a href="#">Bank Details</a></li>
+                  <li><a href="#">Downline Info</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">      
+                <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne">
+                  <i class="menu_icon fa fas fa-columns"></i>
+                  <span>Bonus Reward</span>                 
+                </a>      
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">      
+                <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne">
+                  <i class="menu_icon fa fas fa-columns"></i>
+                  <span>App Download</span>                 
+                </a>      
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">      
+                <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne">
+                  <i class="menu_icon fa fas fa-columns"></i>
+                  <span>Player Support</span>                 
+                </a>      
+            </div>
+          </div>
+      </div>
+    </div> 
+
+
+
+
+
+
+      <div class="container-fluid page-body-wrapper">
+        <nav class="navbar col-lg-12 col-12 px-0 py-0 py-lg-4 d-flex flex-row">
+          <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+            </button>
+            <div class="navbar-brand-wrapper">
+              <a class="navbar-brand brand-logo bank-logo" href="index.html"><img src="img/bank-img.jpg" alt="logo"/></a>
+            </div>
+            <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">Bank Details<div>
+              <small>Please fill the correct information</small>
+            </div></h4>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav navbar-nav-right">
+            </ul>
+          </div>
+        </nav>
+        <div class="global-container">
+          <div class="card login-form pro_main_cover">
+            <div class="card-body">
+              <h4 class="card-title ">Profile Information </h4>
+              <div class="card-text">
+                <form class="form-cover">
+                  <div class="main_from">
+                    <div class="form-group form_1">
+                      <label for="exampleInputEmail1">Name</label>
+                      <input type="name" class="form-control form-control-sm" placeholder="Enter your Real Name"><br><br>
+                      <label for="exampleInputEmail1">Account Number</label>
+                      <input type="number" class="form-control form-control-sm" placeholder="Enter Your Account Number ">
+                    </div>
+                    <div class="form-group form_2">
+                      <label for="exampleInputEmail1">Bank Name </label>
+                      <p class="field--wrapper">
+                        <!--   <select id="heard" required="" class="form-control" > -->
+                        <select id="select-country" name="select-country" class="demo-default form-control" required placeholder="Confirm your country" data-parsley-errors-container="#errors">
+                          <option value="" selected>Select state</option>
+                          <option value="AF">Afghanistan</option>
+                          <option value="AX">&Aring;land Islands</option>
+                          <option value="AL">Albania</option>
+                          <option value="DZ">Algeria</option>
+                          <option value="AS">American Samoa</option>
+                          <option value="AD">Andorra</option>
+                          <option value="AO">Angola</option>
+                          <option value="AI">Anguilla</option>
+                          <option value="AQ">Antarctica</option>
+                          <option value="AG">Antigua and Barbuda</option>
+                          <option value="AR">Argentina</option>
+                          <option value="AM">Armenia</option>
+                          <option value="AW">Aruba</option>
+                          <option value="AU">Australia</option>
+                          <option value="AT">Austria</option>
+                          <option value="AZ">Azerbaijan</option>
+                          <option value="BS">Bahamas</option>
+                          <option value="BH">Bahrain</option>
+                          <option value="BD">Bangladesh</option>
+                          <option value="BB">Barbados</option>
+                          <option value="BY">Belarus</option>
+                          <option value="BE">Belgium</option>
+                          <option value="BZ">Belize</option>
+                          <option value="BJ">Benin</option>
+                          <option value="BM">Bermuda</option>
+                          <option value="BT">Bhutan</option>
+                          <option value="BO">Bolivia, Plurinational State of</option>
+                          <option value="BA">Bosnia and Herzegovina</option>
+                          <option value="BW">Botswana</option>
+                          <option value="BV">Bouvet Island</option>
+                          <option value="BR">Brazil</option>
+                          <option value="IO">British Indian Ocean Territory</option>
+                          <option value="BN">Brunei Darussalam</option>
+                          <option value="BG">Bulgaria</option>
+                          <option value="BF">Burkina Faso</option>
+                          <option value="BI">Burundi</option>
+                          <option value="KH">Cambodia</option>
+                          <option value="CM">Cameroon</option>
+                          <option value="CA">Canada</option>
+                          <option value="CV">Cape Verde</option>
+                          <option value="KY">Cayman Islands</option>
+                          <option value="CF">Central African Republic</option>
+                          <option value="TD">Chad</option>
+                          <option value="CL">Chile</option>
+                          <option value="CN">China</option>
+                          <option value="CX">Christmas Island</option>
+                          <option value="CC">Cocos (Keeling) Islands</option>
+                          <option value="CO">Colombia</option>
+                          <option value="KM">Comoros</option>
+                          <option value="CG">Congo</option>
+                          <option value="CD">Congo, the Democratic Republic of the</option>
+                          <option value="CK">Cook Islands</option>
+                          <option value="CR">Costa Rica</option>
+                          <option value="CI">C&ocirc;te d'Ivoire</option>
+                          <option value="HR">Croatia</option>
+                          <option value="CU">Cuba</option>
+                          <option value="CY">Cyprus</option>
+                          <option value="CZ">Czech Republic</option>
+                          <option value="DK">Denmark</option>
+                          <option value="DJ">Djibouti</option>
+                          <option value="DM">Dominica</option>
+                          <option value="DO">Dominican Republic</option>
+                          <option value="EC">Ecuador</option>
+                          <option value="EG">Egypt</option>
+                          <option value="SV">El Salvador</option>
+                          <option value="GQ">Equatorial Guinea</option>
+                          <option value="ER">Eritrea</option>
+                          <option value="EE">Estonia</option>
+                          <option value="ET">Ethiopia</option>
+                          <option value="FK">Falkland Islands (Malvinas)</option>
+                          <option value="KE">Kenya</option>
+                          <option value="KI">Kiribati</option>
+                          <option value="KP">Korea, Democratic People's Republic of</option>
+                          <option value="KR">Korea, Republic of</option>
+                          <option value="KW">Kuwait</option>
+                          <option value="KG">Kyrgyzstan</option>
+                          <option value="LA">Lao People's Democratic Republic</option>
+                          <option value="LV">Latvia</option>
+                          <option value="LB">Lebanon</option>
+                          <option value="LS">Lesotho</option>
+                          <option value="LR">Liberia</option>
+                          <option value="LY">Libyan Arab Jamahiriya</option>
+                          <option value="LI">Liechtenstein</option>
+                          <option value="LT">Lithuania</option>
+                          <option value="LU">Luxembourg</option>
+                          <option value="MO">Macao</option>
+                          <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                          <option value="MG">Madagascar</option>
+                          <option value="MW">Malawi</option>
+                          <option value="MY">Malaysia</option>
+                          <option value="MV">Maldives</option>
+                          <option value="ML">Mali</option>
+                          <option value="MT">Malta</option>
+                          <option value="MH">Marshall Islands</option>
+                          <option value="MQ">Martinique</option>
+                        </select>
+                      </p><br>
+                      <label for="exampleInputEmail1">IFSC Code: </label>
+                      <input type="number" class="form-control form-control-sm" placeholder="Please provide whatsapp number">
+                    </div>
+                  </div>
+                  <div class="phone_number">
+                    <div class="form-group form_1">
+                      <label for="exampleInputEmail1">GPay Number:</label>
+                      <input type="number" class="form-control form-control-sm" placeholder="Enter Your Account Number ">
+                    </div>
+                    <div class="form_1">
+                      <label for="exampleInputEmail1">PhonePe Number: </label>
+                      <input type="number" class="form-control form-control-sm" placeholder="Please provide whatsapp number ">
+                    </div>
+                    
+                  </div>
+                  <div class="form_1">
+                    <label for="exampleInputEmail1">Create Payment Password </label>
+                    <input type="password" class="form-control form-control-sm" placeholder="Use uppercase, lowercase, number & symbol "><br>
+                  </div>
+                  <div class="form_1">
+                    <label for="exampleInputEmail1">ReType Payment Password </label>
+                    <input type="password" class="form-control form-control-sm" placeholder="Retype the same password ">
+                  </div>
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="end_btn">
+          <button type="submit" class=" my_btn mb-60">Save Changes</button>          
+        </div>
+      </div>
+      <!-- ****************Dashbord End******************** -->
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+
+    </body>
+  </html>
